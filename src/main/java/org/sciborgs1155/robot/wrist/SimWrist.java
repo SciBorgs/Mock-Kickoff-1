@@ -1,12 +1,7 @@
 package org.sciborgs1155.robot.wrist;
 
-public class SimWrist implements WristIO{
+public class SimWrist implements WristIO {
 
-
-
-    @Override
-    public void close() throws Exception {
-    }
-    
-    
+  @Override
+  public void close() throws Exception {}
 }

@@ -1,16 +1,12 @@
 package org.sciborgs1155.robot.roller;
 
-public class SimRoller implements RollerIO{
-    public void setPower() {
-    }
+public class SimRoller implements RollerIO {
+  public void setPower() {}
 
-    public boolean hasTetra() {
-        return false;
-    }
-    
-    @Override
-    public void close() throws Exception {
-    }
-    
-    
+  public boolean hasTetra() {
+    return false;
+  }
+
+  @Override
+  public void close() throws Exception {}
 }
