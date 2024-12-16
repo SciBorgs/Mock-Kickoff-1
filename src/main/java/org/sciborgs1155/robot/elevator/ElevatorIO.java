@@ -4,7 +4,6 @@ import monologue.Logged;
 
 /** Hardware interface for the angled elevator */
 public interface ElevatorIO extends AutoCloseable, Logged {
-    
     /**
      * @return The position, in meters, of the angled elevator's height. 
      * (height means the distance along the rail from the base, not vertical height)
