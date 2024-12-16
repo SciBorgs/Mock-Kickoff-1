@@ -25,7 +25,7 @@ public class Wrist {
     return new InstantCommand();
   }
 
-  public Command PointIn() {
+  public Command pointIn() {
     return new InstantCommand();
   }
 }
