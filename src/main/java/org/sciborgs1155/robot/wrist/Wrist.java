@@ -21,15 +21,11 @@ public class Wrist {
     PIDController pid = new PIDController(kP, kI, kD);
   }
 
-  public Command intake() {
+  public Command pointOut() {
     return new InstantCommand();
   }
 
-  public Command outtake() {
-    return new InstantCommand();
-  }
-
-  public Command setSpeed() {
+  public Command PointIn() {
     return new InstantCommand();
   }
 }
