@@ -1,5 +1,10 @@
 package org.sciborgs1155.robot.wrist;
 
+import static org.sciborgs1155.robot.wrist.WristConstants.*;
+
+import edu.wpi.first.math.controller.PIDController;
+import edu.wpi.first.wpilibj2.command.Command;
+import edu.wpi.first.wpilibj2.command.InstantCommand;
 import org.sciborgs1155.robot.Robot;
 
 public class Wrist {
@@ -12,5 +17,19 @@ public class Wrist {
     return new Wrist(new NoWrist());
   }
 
-  public Wrist(WristIO wrist) {}
+  public Wrist(WristIO wrist) {
+    PIDController pid = new PIDController(kP, kI, kD);
+  }
+
+  public Command intake() {
+    return new InstantCommand();
+  }
+
+  public Command outtake() {
+    return new InstantCommand();
+  }
+
+  public Command setSpeed() {
+    return new InstantCommand();
+  }
 }
