@@ -19,5 +19,11 @@ public class SimElevator implements ElevatorIO {
         // TODO Auto-generated method stub
         throw new UnsupportedOperationException("Unimplemented method 'setVoltage'");
     }
+
+    @Override
+    public void close() throws Exception {
+        // TODO Auto-generated method stub
+        throw new UnsupportedOperationException("Unimplemented method 'close'");
+    }
     
 }

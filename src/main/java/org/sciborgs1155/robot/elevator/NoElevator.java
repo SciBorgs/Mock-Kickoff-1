@@ -2,22 +2,25 @@ package org.sciborgs1155.robot.elevator;
 
 public class NoElevator implements ElevatorIO {
 
+    /**
+     * Constructor
+     */
+    public NoElevator() {}
+
     @Override
     public double position() {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'position'");
+        return 0;
     }
 
     @Override
     public double velocity() {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'velocity'");
+        return 0;
     }
 
     @Override
-    public void setVoltage() {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'setVoltage'");
-    }
+    public void setVoltage() { }
+
+    @Override
+    public void close() {}
     
 }
